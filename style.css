@@ -4,21 +4,29 @@
 
 
 html{
-  font-family: 'Vollkorn', sans-serif;
+  font-family: 'Quicksand', sans-serif;
   background: url(images/bg1.jpg) no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
+  overflow: hidden;
 }
 
 body{
   margin: 0;
   padding: 0;
+  overflow-x: hidden;
+  display: flex;
+  flex-direction: column;
 }
 
 /** CONTAINERS ALL
 ============================================================**/
+
+.container{
+  height: 100vh;
+}
 
 
 .main-page{
@@ -38,6 +46,7 @@ body{
   width: 100%;
   background-color: rgba(0, 0, 0, 0.5);
   border-bottom: 2px solid #ffffff;
+  padding:5px;
 }
 .nav li{
   list-style-type: none;
@@ -62,7 +71,13 @@ body{
 #logo span{
   font-family: "Meddon" , cursive;
   font-weight: bolder;
+}
 
+
+@media only screen and (max-width: 1000px) {
+  #logo{
+    flex: 4;
+  }
 }
 
 
@@ -71,7 +86,6 @@ body{
 
 .welcome-container{
   margin: 0;
-  margin-top: 10%;
   display: flex;
   align-items: center;
   height: 100%;
@@ -87,11 +101,21 @@ body{
 
 .welcome-box .heading{
   font-size: 32px;
+  font-weight: bold;
+}
+
+.welcome-box .heading span{
   font-family: "Meddon" , cursive;
-  font-weight: bolder;
+  font-size: 30px;
 }
 
 .welcome-box .text{
   font-size: 22px;
+}
 
+/** About Div
+============================================================**/
+
+.about{
+  background-color: #000000;
 }
