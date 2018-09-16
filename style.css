@@ -4,8 +4,8 @@
 
 
 html{
-  font-family: 'Roboto', sans-serif;
-  background: url(images/bg2.jpg) no-repeat center center fixed;
+  font-family: 'Vollkorn', sans-serif;
+  background: url(images/bg1.jpg) no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -33,35 +33,36 @@ body{
 ============================================================**/
 
 .nav{
-  background-color: rgba(0, 0, 0, 0.5);
   display: flex;
   align-items: center;
   width: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  border-bottom: 2px solid #ffffff;
 }
 .nav li{
   list-style-type: none;
   flex: 1;
-  justify-content: space-around;
-
 }
 .nav li a{
   text-decoration: none;
   color: #ffffff;
+  padding: 4px;
   font-size: 18px;
 }
 .nav li a:hover{
-  color: red;center
-
+  background-color: #ffffff;
+  color: #000000;
 }
 
 #logo{
   font-size: 25px;
-  flex: 6;
+  flex: 8;
   padding-left: 3%;
 }
 #logo span{
   font-family: "Meddon" , cursive;
   font-weight: bolder;
+
 }
 
 
@@ -70,7 +71,7 @@ body{
 
 .welcome-container{
   margin: 0;
-  border: 1px solid #ffffff;
+  margin-top: 10%;
   display: flex;
   align-items: center;
   height: 100%;
@@ -87,6 +88,7 @@ body{
 .welcome-box .heading{
   font-size: 32px;
   font-family: "Meddon" , cursive;
+  font-weight: bolder;
 }
 
 .welcome-box .text{
