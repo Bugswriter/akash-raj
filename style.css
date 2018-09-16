@@ -1,8 +1,6 @@
 /** HTML and BODY
 ============================================================**/
 
-
-
 html{
   font-family: 'Quicksand', sans-serif;
   background: url(images/bg1.jpg) no-repeat center center fixed;
@@ -10,15 +8,12 @@ html{
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-  overflow: hidden;
 }
 
 body{
   margin: 0;
   padding: 0;
-  overflow-x: hidden;
-  display: flex;
-  flex-direction: column;
+  overflow-y: 0;
 }
 
 /** CONTAINERS ALL
@@ -28,13 +23,10 @@ body{
   height: 100vh;
 }
 
-
 .main-page{
   margin: 0;
   padding: 0;
   color: #ffffff;
-  display: flex;
-  flex-direction: column;
 }
 
 /** NAV BAR
@@ -47,6 +39,7 @@ body{
   background-color: rgba(0, 0, 0, 0.5);
   border-bottom: 2px solid #ffffff;
   padding:5px;
+  position: fixed;
 }
 .nav li{
   list-style-type: none;
@@ -62,7 +55,6 @@ body{
   background-color: #ffffff;
   color: #000000;
 }
-
 #logo{
   font-size: 25px;
   flex: 8;
@@ -72,7 +64,6 @@ body{
   font-family: "Meddon" , cursive;
   font-weight: bolder;
 }
-
 
 @media only screen and (max-width: 1000px) {
   #logo{
@@ -117,5 +108,5 @@ body{
 ============================================================**/
 
 .about{
-  background-color: #000000;
+  background-color: #ffffff;
 }
